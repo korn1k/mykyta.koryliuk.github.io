@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+.newspaper {
+    max-width: 64rem;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: left;
+    border-bottom: 2px solid #333;
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.newspaper-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.date {
+    font-style: italic;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.lead-story {
+    margin-bottom: 3rem;
+}
+
+.content {
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-footer {
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.company-logo {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    float: left;
+    border-radius: 50%;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.btn-outline:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .newspaper {
+        padding: 1rem;
+    }
+
+    .newspaper-name {
+        font-size: 2.25rem;
+    }
+
+    .lead-story h2 {
+        font-size: 1.75rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
